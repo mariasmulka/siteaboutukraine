@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Моя країна- Україна</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="style.css" href="/slider.css" type="text/css" />
+    </head>
+
+
+<body>
+    <header>
+    </header>
+    
+     <main>
+        <nav>
+    
+<ul>
+  <li><a class="active" href="Україна.html">Головна</a></li>
+  <li><a href="держ устрій.html">Державний устрій</a></li>
+  <li><a href="нар свята.html">Народні свята</a></li>
+  <li><a href="сім чудес.html">Сім чудес</a></li>
+  <li><a href="кухня.html">Кухня</a></li>    
+</ul>
+             </nav>
+         
+    <content>
+    
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+ <img src="1234.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+ <img src="159.jpeg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+         </content>
+        </main>
+         
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+
+     
+    
+
+
+
+</body>
+</html>
